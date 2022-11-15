@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSONplaceholder</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body style="background-color: grey;">
+    <!-- <header></header> -->
+    
+    <main>
+        <div class="container">
+            <div class="d-flex">
+                <ul class="user-list list-unstyled scrollbar" id="style-1">
+                    
+                </ul>
+                
+                <ul class="post-list list-unstyled  px-3 scrollbar" id="style-1">
+                    
+                </ul>
+                
+                <ul class="comment-list list-unstyled  px-3 scrollbar" id="style-1">
+                    
+                </ul>
+            </div>
+        </div>
+    </main>
+    
+    
+    <template class="template">
+        <li class="px-4 py-4 border rounded mb-4" style="background-color: white;">
+            <div class="d-flex align-items-center justify-content-between">
+                <h3 class="user-name">Leanne Graham</h3>
+                <span class="user-id h1">1</span>
+            </div>
+            <div class="d-flex justify-content-between">
+                <p class=" fw-bold">Username: <span class="fw-lighter user-username">Bret</span></p>
+                <p class=" fw-bold">Email: <a class="user-email fw-lighter text-dark text-decoration-none" href="#">Sincere@april.biz</a></p>
+            </div>
+            <div class="d-flex justify-content-between">
+                <p class="fw-bold">Phone: <a class="user-telephone-number fw-lighter text-decoration-none" href="#">1-770-736-8031 x56442</a></p>
+                <p class="fw-bold">Website: <a class="user-website fw-lighter text-decoration-none" href="#">hildegard.org</a></p>
+            </div>
+            <div>
+                <h2 class="text-center fs-5">Address</h2>
+                <ul class="list-unstyled">
+                    <li class="d-flex align-items-center justify-content-between">
+                        <p class="fw-bold">City: <span class="user-city fw-lighter">Gwenborough</span></p>
+                        <p class="fw-bold">Street: <span class="user-street fw-lighter">Kulas Light</span></p>
+                    </li>
+                    
+                    <li class="d-flex align-items-center justify-content-between">
+                        <p class="fw-bold">Zipcode: <span class="user-zipcode fw-lighter">92998-3874</span></p>
+                        <p class="fw-bold">Suite: <span class="user-suite fw-lighter">Apt. 556</span></p>
+                    </li>
+                    
+                    <li class="d-flex align-items-center justify-content-between">
+                        <a class="user-location" href="#" target="blank">Location</a>
+                        <button class="user-posts btn btn-success">Posts</button>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </template>
+    
+    <template class="post-template">
+        <li class="post-item text-bg-dark p-3 border mb-3 rounded">
+            <h3 class="post-title fs-6"></h3>
+            <p class="post-body fs-5"></p>
+        </li>
+    </template> 
+    
+    <template class="comment-template">
+        <li class="comment-item text-bg-dark p-3 border mb-3 rounded" >
+            <h3 class="comment-title fs-6"></h3>
+            <a class="comment-email" href="#"></a>
+            <p class="comment-body fs-5"></p>
+        </li>
+    </template> 
+    
+    <script src="./js/main.js"></script>
+</body>
+</html>
